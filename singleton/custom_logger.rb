@@ -5,13 +5,6 @@ class Logger
   @@instance = new
   @instantiated = false
 
-  def self.new
-    #lets allow the children to be created
-    return unless (self != Logger || @instantiated == false)
-    @instantiated = true
-    super
-  end
-  
   def self.instance
     Logger.singleton_registry_look_up(ENV['DEVELOPMENT_ENVIRONMENT']) 
   end

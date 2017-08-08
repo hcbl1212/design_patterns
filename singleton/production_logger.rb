@@ -10,4 +10,5 @@ class ProductionLogger < Logger
     #the actually password should be redacted in production log
     @log.puts information.gsub(/(?<=password:\s).*/im, "FILTERED")
   end
+
 end 
