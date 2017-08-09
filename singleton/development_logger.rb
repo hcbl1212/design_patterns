@@ -8,7 +8,7 @@ class DevelopmentLogger < Logger
 
   def log information
     #development log does not need to redact any information
-    @log.puts information
+    logger_mutex { @log.puts information }
   end
 
 end 

@@ -8,7 +8,7 @@ class ProductionLogger < Logger
 
   def log information
     #the actually password should be redacted in production log
-    @log.puts information.gsub(/(?<=password:\s).*/im, "FILTERED")
+    logger_mutex { @log.puts information.gsub(/(?<=password:\s).*/im, "FILTERED") }
   end
 
 end 
