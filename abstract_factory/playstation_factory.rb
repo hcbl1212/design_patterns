@@ -1,3 +1,9 @@
+require './playstation_console'
+require './playstation_controller'
 class PlaystationFactory
-  #creates and returns both playstion console and controller
+  attr_accessor :console, :controller
+  def initialize
+    @console = PlaystationConsole.new 
+    @controller = PlaystationController.new 
+  end
 end

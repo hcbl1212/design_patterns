@@ -1,6 +1,6 @@
+require './play_game.rb'
 class Client
-  # prompt input
-  # read input
-  # pipe input into 
-  # playgame
+  puts "Enter Xbox or Playstation"
+  console_type = gets.chomp
+  game = PlayGame.new(console_type)
 end

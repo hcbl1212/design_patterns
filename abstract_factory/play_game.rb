@@ -1,5 +1,9 @@
+require './playstation_factory'
+require './xbox_factory'
 class PlayGame
-  #read in the type of gamesystem needed
-  #create type of game system and return it
-
+  attr_accessor :console_to_play
+  def initialize(strategy_name)
+    @console_to_play = Object.const_get(strategy_name).send(:new)
+    @console_to_play
+  end
 end
