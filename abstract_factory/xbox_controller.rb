@@ -1,2 +1,0 @@
-class XboxController
-end
