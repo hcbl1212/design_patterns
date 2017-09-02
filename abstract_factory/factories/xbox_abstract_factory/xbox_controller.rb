@@ -1,13 +1,4 @@
-require './strategies/controller_button_strategies'
-class XboxController
+require './interfaces/controller_interface.rb'
+class XboxController < Controller
   include ControllerButtonStrategies::XboxControllerButtons
-
-  def x
-    self.x_button
-  end 
-
-  def y
-    self.y_button
-  end
-
 end
