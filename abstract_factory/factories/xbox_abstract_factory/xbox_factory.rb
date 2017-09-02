@@ -1,8 +1,6 @@
-require './xbox_console'
-require './xbox_controller'
-class XboxFactory
+class Xbox
   attr_accessor :console, :controller
-  def initialze
+  def initialize
     @console = XboxConsole.new
     @controller= XboxController.new
   end

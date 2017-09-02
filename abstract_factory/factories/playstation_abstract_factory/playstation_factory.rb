@@ -1,6 +1,4 @@
-require './playstation_console'
-require './playstation_controller'
-class PlaystationFactory
+class Playstation
   attr_accessor :console, :controller
   def initialize
     @console = PlaystationConsole.new 
