@@ -1,7 +1,10 @@
-class Playstation
-  attr_accessor :console, :controller
-  def initialize
-    @console = PlaystationConsole.new 
-    @controller = PlaystationController.new 
+require './interfaces/abstract_factory_interface'
+class Playstation < GameAbstractFactory
+  def console
+    PlaystationConsole.new 
+  end
+
+  def controller
+    PlaystationController.new 
   end
 end

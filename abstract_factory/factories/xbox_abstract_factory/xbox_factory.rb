@@ -1,7 +1,10 @@
-require './interfaces/abstract_factory'
+require './interfaces/abstract_factory_interface'
 class Xbox < GameAbstractFactory
-  def initialize
-    @console = XboxConsole.new
-    @controller= XboxController.new
+  def console
+    XboxConsole.new
+  end
+
+  def controller
+    XboxController.new
   end
 end
