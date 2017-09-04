@@ -1,7 +1,7 @@
 Dir.glob('./factories/**/**/*.rb', &method(:require))
 class PlayGame
   def initialize(console_type)
-    @console_to_play = Object.const_get(console_type).send(:new)
+    @console_to_play = Object.const_get(console_type).instance
   end
 
   def console
@@ -14,5 +14,4 @@ class PlayGame
 
   private
     attr_accessor :console_to_play
-
 end

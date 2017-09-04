@@ -1,7 +1,10 @@
-class Xbox
-  attr_accessor :console, :controller
-  def initialize
-    @console = XboxConsole.new
-    @controller= XboxController.new
+require './interfaces/abstract_factory_interface'
+class Xbox < GameAbstractFactory
+  def console
+    XboxConsole.new
+  end
+
+  def controller
+    XboxController.new
   end
 end
