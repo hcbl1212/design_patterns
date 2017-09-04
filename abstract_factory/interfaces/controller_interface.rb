@@ -3,7 +3,7 @@ class Controller
 
   def x
     self.x_button
-  end 
+  end
 
   def y
     self.y_button
