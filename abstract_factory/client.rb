@@ -1,9 +1,10 @@
 require './play_game'
 class Client
-  ['Xbox', 'Playstation'].each do | console_type |
+  ['Xbox', 'Playstation', 'Wii'].each do | console_type |
     game = PlayGame.new(console_type)
-    game.controller.x
-    game.controller.y
+    game.console.power_on
+    game.controller.move_forward
+    game.controller.jump
     game.console.power_off
   end
 end

@@ -1,10 +1,10 @@
 require './strategies/controller_button_strategies'
 class Controller
-  def x
-    self.x_button
+  def move_forward
+    self.move_forward
   end
 
-  def y
-    self.y_button
+  def jump
+    self.jump
   end
 end

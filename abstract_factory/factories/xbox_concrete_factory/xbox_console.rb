@@ -1,5 +1,5 @@
 class XboxConsole
-  def initialize
+  def power_on
     puts 'Xbox is powered on.'
   end
 
