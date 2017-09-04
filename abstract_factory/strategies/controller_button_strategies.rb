@@ -1,21 +1,31 @@
 module ControllerButtonStrategies
   module XboxControllerButtons
-    def x_button
-      puts 'Xbox X button.'
+    def move_forward
+      puts 'Press Xbox Left Stick Up Button'
     end
 
-    def y_button
-      puts 'Xbox Y button.'
+    def jump
+      puts 'Press Xbox X Button'
     end
   end
 
   module PlaystationControllerButtons
-    def x_button
-      puts 'Playstation X button.'
+    def move_forward
+      puts 'Press Playstation Up L3 button'
     end
 
-    def y_button
-      puts 'Playstation Y button.'
+    def jump
+      puts 'Press Playstation X Button'
+    end
+  end
+
+  module WiiControllerButtons
+    def move_forward
+      puts 'Press Up Arrow on Wii D-Pad.'
+    end
+
+    def jump
+      puts 'Press Wii B button.'
     end
   end
 end

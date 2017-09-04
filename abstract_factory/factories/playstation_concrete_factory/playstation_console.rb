@@ -1,5 +1,5 @@
 class PlaystationConsole
-  def initialize
+  def power_on
     puts 'Playstation is powered on.'
   end
 
