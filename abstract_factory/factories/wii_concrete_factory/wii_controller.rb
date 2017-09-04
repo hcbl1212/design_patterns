@@ -1,4 +1,4 @@
-require './interfaces/controller_interface.rb'
-class WiiController < Controller
+require './strategies/controller_button_strategies'
+class WiiController
   include ControllerButtonStrategies::WiiControllerButtons
 end

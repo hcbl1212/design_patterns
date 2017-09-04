@@ -1,4 +1,4 @@
-require './interfaces/controller_interface.rb'
-class PlaystationController < Controller
+require './strategies/controller_button_strategies'
+class PlaystationController 
   include ControllerButtonStrategies::PlaystationControllerButtons
 end
