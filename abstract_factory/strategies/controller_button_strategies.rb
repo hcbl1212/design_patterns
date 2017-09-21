@@ -1,4 +1,7 @@
 module ControllerButtonStrategies
+  #Each game needs to be able to have the character move forward and jump.
+  #However, each controller has a different button (algorithm) that defines
+  #how to make the player move forward and jump.  
   module XboxControllerButtons
     def move_forward
       puts 'Press Xbox Left Stick Up Button'
