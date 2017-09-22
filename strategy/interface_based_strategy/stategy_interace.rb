@@ -1,0 +1,3 @@
+class StrategyInterface
+  
+end
