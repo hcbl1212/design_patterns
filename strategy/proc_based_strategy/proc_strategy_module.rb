@@ -16,4 +16,5 @@ module ProcBasedStrategy
   def check_input_equals_out_put(convert_from, convert_to)
     convert_from.to_s == convert_to.to_s
   end
+
 end
