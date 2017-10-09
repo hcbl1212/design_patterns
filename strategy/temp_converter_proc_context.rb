@@ -1,5 +1,5 @@
 Dir.glob('./proc_based_strategy/*.rb', &method(:require))
-class TempConverterProcExample
+class TempConverterProcContext
   include ProcBasedStrategy
 
   def initialize(convert_from)
