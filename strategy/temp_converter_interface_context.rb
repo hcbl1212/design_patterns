@@ -1,5 +1,5 @@
 Dir.glob('./interface_based_strategy/*.rb', &method(:require))
-class TempConvertInterfaceExample
+class TempConvertInterfaceContext
 
   def initialize(convert_from)
     @convert_strategy = Object.const_get("#{convert_from.capitalize}Strategy").new

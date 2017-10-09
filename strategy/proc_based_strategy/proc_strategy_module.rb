@@ -10,7 +10,7 @@ module ProcBasedStrategy
 
   def convert_temperature(convert_to, temperature)
     check_input_equals_out_put(convert_to) ? temperature :
-    TEMPERATURE_TRANSFORMATIONS["#{@convert_from}_to_#{convert_to}".to_sym].call(temperature)# rescue "Conversion Doesn't Exist"      
+    TEMPERATURE_TRANSFORMATIONS["#{@convert_from}_to_#{convert_to}".to_sym].call(temperature)
   end
 
   private
