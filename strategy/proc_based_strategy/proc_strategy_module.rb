@@ -2,10 +2,10 @@ module ProcBasedStrategy
   TEMPERATURE_TRANSFORMATIONS = {
     fahrenheit_to_celsius: Proc.new { | temperature | (temperature - 32) * 5.0 / 9.0 },
     fahrenheit_to_kelvin: Proc.new { | temperature | (temperature - 32) * 5.0 / 9.0 + 273.15 },
-    celsius_to_fahrenheit: Proc.new { | temperature |temperature * 5.0 / 9.0 + 32 },
+    celsius_to_fahrenheit: Proc.new { | temperature |temperature * 9.0 / 5.0 + 32 },
     celsius_to_kelvin: Proc.new { | temperature | temperature + 273.15 },
     kelvin_to_celsius: Proc.new { | temperature | temperature - 273.15 },
-    kelvin_to_fahrenheit: Proc.new { | temperature | temperature * 5.0 / 9.0 + 32 + 273.15 }
+    kelvin_to_fahrenheit: Proc.new { | temperature | temperature * 9.0 / 5.0 - 459.67 }
   }
 
   def convert_temperature(convert_to, temperature)

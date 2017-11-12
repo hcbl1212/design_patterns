@@ -6,7 +6,7 @@ class KelvinStrategy < StrategyInterface
     when 'celsius'
       temperature - 273.15
     when 'fahrenheit'
-      temperature * 5.0 / 9.0 + 32 + 273.15 
+      temperature * 9/5 - 459.67
     when 'kelvin'
       temperature
     else
